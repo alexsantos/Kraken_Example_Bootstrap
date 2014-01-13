@@ -12,7 +12,7 @@ The topics covered here are:
 
 ## Prerequisites
 * You will --of course-- need [Node](http://nodejs.org) (Version >= 0.10.20 preferred)
-* The Kraken generator. If you havent yet installed it, simply do: `sudo npm install -g generator-kraken`
+* The Kraken generator. If you haven't yet installed it, simply do: `sudo npm install -g generator-kraken`
 
 ## Create an application
 ```bash
@@ -53,12 +53,12 @@ For this first example, we'll use the [Jumbotron](http://getbootstrap.com/exampl
 var IndexModel = require('../models/index');
 module.exports = function (app) {
     var model = new IndexModel();
-    app.get('/jumbotron', function (req, res) {        
-        res.render('jumbotron', model);     
+    app.get('/jumbotron', function (req, res) {       
+        res.render('jumbotron', model);    
     });
 };
 ```
-2. We want to have the same "Hello name of the application" message in our bootstrap page. To pass the name of the application using the internacionalization capabilitties of Kraken, simply do:
+2. We want to have the same "Hello name of the application" message in our bootstrap page. To pass the name of the application using the internationalization capabilities of Kraken, simply do:
 
 ```bash
 $ cp locales/US/en/index.properties locales/US/en/jumbotron.properties
