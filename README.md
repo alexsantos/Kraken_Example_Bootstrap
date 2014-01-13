@@ -48,7 +48,8 @@ Let's add some examples from the Bootstrap website!
 For this first example, we'll use the [Jumbotron](http://getbootstrap.com/examples/jumbotron/) example.
 
 1. To be able to go to this new page, first we need a router. For this, let's create a file called jumbotron.js on the controllers/ directory:
-```
+
+```javascript
 'use strict';
 var IndexModel = require('../models/index');
 module.exports = function (app) {
@@ -58,6 +59,7 @@ module.exports = function (app) {
     });
 };
 ```
+
 2. We want to have the same "Hello name of the application" message in our bootstrap page. To pass the name of the application using the internationalization capabilities of Kraken, simply do:
 
 ```bash
